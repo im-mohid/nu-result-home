@@ -1,143 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NU Honours Result With GPA</title>
 
-  <!-- SEO Title -->
-  <title>Collegewise Result & GPA Result for National University | Honours, Degree, Masters GPA</title>
+<!-- SEO Meta -->
+<meta name="description" content="Check your National University (NU) Honours results with GPA calculation for all academic years. Fast, reliable, and easy-to-use online service.">
+<meta name="keywords" content="NU Honours Result, National University Honours GPA, Honours Result BD, NU Result, NU GPA, National University Bangladesh">
 
-  <!-- SEO Meta Description -->
-  <meta name="description" content="Get National University (NU) Honours, Degree, and Masters results with GPA calculation for all academic years. Fast, accurate, and easy-to-use online result services.">
+<!-- Open Graph -->
+<meta property="og:title" content="NU Honours Result With GPA">
+<meta property="og:description" content="Check your Honours GPA results for all academic years quickly and reliably.">
+<meta property="og:image" content="https://yourdomain.com/preview-image.jpg">
+<meta property="og:url" content="https://yourgithubpageurl.github.io/">
 
-  <!-- SEO Keywords -->
-  <meta name="keywords" content="National University Result, Collegewise Result, NU Honours GPA, NU Degree Result, NU Masters Result, Bangladesh University Results, NU GPA Calculator, Honours Result BD, Degree Result BD, Masters Result BD">
-
-  <!-- Open Graph (OG) Tags -->
-  <meta property="og:title" content="Collegewise Result & GPA Result for National University">
-  <meta property="og:description" content="Check NU Honours, Degree, and Masters results with GPA calculation. All years supported. Fast and reliable online service.">
-  <meta property="og:image" content="https://yourdomain.com/preview-image.jpg">
-  <meta property="og:url" content="https://yourgithubpageurl.github.io/">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Collegewise & GPA Result for National University">
-  <meta name="twitter:description" content="Honours, Degree, Masters GPA results for National University Bangladesh.">
-  <meta name="twitter:image" content="https://yourdomain.com/preview-image.jpg">
-
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "National University Result Services",
-    "url": "https://yourgithubpageurl.github.io/",
-    "description": "Get National University (NU) Honours, Degree, and Masters results with GPA calculation for all academic years.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "National University Result Portal"
-    }
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
   }
-  </script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .fade-in {
-      animation: fadeIn 1.2s ease-in-out;
-    }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  .card {
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  }
+
+  .card p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .card button {
+    background: linear-gradient(135deg, #00ffcc, #0088ff);
+    color: #000;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  }
+
+  .card button:hover {
+    background: linear-gradient(135deg, #0088ff, #00ffcc);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  }
+
+  @media (max-width: 480px) {
+    .card { padding: 30px 20px; }
+    .card h2 { font-size: 1.5rem; margin-bottom: 20px; }
+    .card button { font-size: 15px; padding: 12px; }
+  }
+</style>
 </head>
-<body class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white min-h-screen flex flex-col">
+<body>
 
-  <!-- Loading Screen -->
-  <div id="loadingScreen" class="fixed inset-0 flex flex-col items-center justify-center bg-gradient-to-r from-blue-700 to-cyan-500 z-50">
-    <div class="w-16 h-16 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
-    <p class="mt-4 text-lg">⏳ Please wait, loading NU Result Service...</p>
-  </div>
-
-  <!-- Header -->
-  <header class="text-center py-8 fade-in hidden" id="mainHeader">
-    <h1 class="text-4xl font-bold">📊 Collegewise & GPA Result for National University</h1>
-    <p class="text-lg mt-2">Honours • Degree • Masters – All Results in One Place</p>
-  </header>
-
-  <!-- Services -->
-  <main class="flex-1 flex flex-wrap justify-center gap-6 px-4 fade-in hidden" id="mainContent">
-
-    <!-- Honours -->
-    <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-lg p-6 w-80 hover:scale-105 transition transform duration-300">
-      <h2 class="text-2xl font-semibold mb-2">🎓 Honours Result With GPA</h2>
-      <p class="text-sm mb-4">Get GPA and results for every academic year.</p>
-      <button onclick="window.location.href='https://nu-honours-result.onrender.com/'"
-        class="bg-orange-500 hover:bg-orange-600 px-5 py-2 rounded-lg font-medium transition">
-        Visit Service
-      </button>
-    </div>
-
-    <!-- Degree -->
-    <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-lg p-6 w-80 hover:scale-105 transition transform duration-300">
-      <h2 class="text-2xl font-semibold mb-2">📄 Degree Result With GPA</h2>
-      <p class="text-sm mb-4">Fast and reliable degree result with GPA calculation. (Coming soon)</p>
-      <button disabled
-        class="bg-gray-400 cursor-not-allowed px-5 py-2 rounded-lg font-medium">
-        Coming Soon
-      </button>
-    </div>
-
-    <!-- Masters -->
-    <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-lg p-6 w-80 hover:scale-105 transition transform duration-300">
-      <h2 class="text-2xl font-semibold mb-2">🎓 Masters Result With GPA</h2>
-      <p class="text-sm mb-4">Efficient and accurate masters result processing. (Coming soon)</p>
-      <button disabled
-        class="bg-gray-400 cursor-not-allowed px-5 py-2 rounded-lg font-medium">
-        Coming Soon
-      </button>
-    </div>
-
-  </main>
-
-  <!-- Status -->
-  <footer class="text-center py-4 bg-white/10 mt-6 hidden" id="mainFooter">
-    <span id="status" class="text-sm text-green-300">⏳ Pinging Render server...</span>
-  </footer>
-
-  <!-- Ping Script -->
-  <script>
-    const RENDER_URL = "https://nu-honours-result.onrender.com";
-    const statusDiv = document.getElementById("status");
-    const loadingScreen = document.getElementById("loadingScreen");
-    const mainHeader = document.getElementById("mainHeader");
-    const mainContent = document.getElementById("mainContent");
-    const mainFooter = document.getElementById("mainFooter");
-
-    function showMainContent() {
-      loadingScreen.style.display = "none";
-      mainHeader.classList.remove("hidden");
-      mainContent.classList.remove("hidden");
-      mainFooter.classList.remove("hidden");
-    }
-
-    function pingServer() {
-      fetch(RENDER_URL)
-        .then(() => {
-          const time = new Date().toLocaleTimeString();
-          statusDiv.textContent = `✅ NU Result Service is ready! (Pinged at: ${time})`;
-          showMainContent();
-        })
-        .catch(() => {
-          statusDiv.textContent = "❌ Failed to connect Render server!";
-          showMainContent();
-        });
-    }
-
-    pingServer(); // First ping
-    setInterval(pingServer, 5 * 60 * 1000); // Ping every 5 min
-  </script>
+<div class="card">
+  <h2>🎓 NU Honours Result With GPA</h2>
+  <p>Check GPA and results for every academic year quickly and reliably using our online service.</p>
+  <button onclick="window.location.href='https://nu-honours-result.onrender.com/'">Visit Service</button>
+</div>
 
 </body>
 </html>

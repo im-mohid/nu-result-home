@@ -5,187 +5,139 @@
   <meta name="google-site-verification" content="S2JxSJBCXDekN-kPKsBKO61BUH4JLCfn6-IgjxNMipg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NU Honours Result With GPA | National University Bangladesh</title>
-
-  <!-- SEO Meta -->
-  <meta name="description" content="Check National University (NU) Honours Results with GPA calculation. Easily calculate your NU GPA for 1st year, 2nd year, 3rd year, and 4th year. Fast, reliable & mobile-friendly NU result service.">
-  <meta name="keywords" content="NU Honours Result, NU GPA Calculator, National University Bangladesh, Honours Result BD, NU Result 2025, GPA NU Honours">
-
+  <meta name="description" content="Check NU Honours Result 2025 with GPA calculation for 1st, 2nd, 3rd, and 4th year. National University Bangladesh students can calculate GPA & CGPA online easily and fast.">
+  <meta name="keywords" content="NU Honours Result 2025, NU GPA Calculator Bangladesh, National University Result BD, NU 1st Year Result, NU 2nd Year Result, NU 3rd Year Result, NU 4th Year Result, nu.ac.bd results, NU Result Check Online">
+  
   <!-- Open Graph -->
-  <meta property="og:title" content="NU Honours Result With GPA">
-  <meta property="og:description" content="Check your NU Honours Results with GPA calculator. Simple, reliable & fast NU result service.">
+  <meta property="og:title" content="NU Honours Result 2025 With GPA">
+  <meta property="og:description" content="Check your NU Honours Results 2025 with GPA calculator. Fast, reliable & mobile-friendly NU result service for all years.">
   <meta property="og:url" content="https://im-mohid.github.io/nu-result-home/">
   <meta property="og:image" content="https://im-mohid.github.io/nu-result-home/preview.jpg">
   <meta property="og:type" content="website">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="NU Honours Result With GPA">
-  <meta name="twitter:description" content="NU Honours Result & GPA Calculator - Simple & Fast.">
+  <meta name="twitter:title" content="NU Honours Result 2025 With GPA">
+  <meta name="twitter:description" content="NU Honours Result & GPA Calculator Bangladesh - Fast & Reliable.">
   <meta name="twitter:image" content="https://im-mohid.github.io/nu-result-home/preview.jpg">
 
-  <!-- Structured Data (FAQ Schema) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "NU Honours GPA কিভাবে হিসাব করা হয়?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "National University Honours GPA বের করতে প্রতিটি বিষয় অনুযায়ী (Credit × Grade Point) হিসাব করে সবগুলো যোগফলকে মোট ক্রেডিট দিয়ে ভাগ করতে হয়।"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "NU Honours Result অনলাইনে কোথায় পাওয়া যাবে?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "NU Honours Result অফিসিয়াল ওয়েবসাইট (www.nu.ac.bd/results) এবং আমাদের সার্ভিস https://nu-honours-result.onrender.com/ থেকে দেখা যাবে।"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "NU Honours GPA ক্যালকুলেটর কীভাবে কাজ করে?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "NU Honours GPA ক্যালকুলেটর স্বয়ংক্রিয়ভাবে আপনার প্রতিটি বিষয়ের গ্রেড পয়েন্ট ও ক্রেডিট নিয়ে GPA বের করে দেয়, তাই ম্যানুয়ালি হিসাব করার ঝামেলা নেই।"
-        }
-      }
-    ]
-  }
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="bg-gradient-to-br from-gray-100 via-blue-50 to-indigo-100 font-sans">
+
+  <!-- Navigation Bar -->
+  <header class="w-full bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 shadow-xl sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <a href="home.html" class="text-white font-extrabold text-2xl tracking-wide hover:text-yellow-300 transition duration-300">🎓 NU Result BD</a>
+      
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 text-lg font-medium">
+        <li><a href="home.html" class="text-white hover:text-yellow-300 transition duration-300">Home</a></li>
+        <li><a href="https://nu-honours-result.onrender.com/about" class="text-white hover:text-yellow-300 transition duration-300">About Us</a></li>
+        <li><a href="https://nu-honours-result.onrender.com/privacy" class="text-white hover:text-yellow-300 transition duration-300">Privacy Policy</a></li>
+        <li><a href="https://nu-honours-result.onrender.com/contact" class="text-white hover:text-yellow-300 transition duration-300">Contact Us</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="block md:hidden text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="menu" class="hidden md:hidden bg-gradient-to-r from-blue-700 to-purple-700 shadow-lg animate__animated animate__fadeInDown">
+      <ul class="flex flex-col space-y-2 p-4 text-lg">
+        <li><a href="home.html" class="text-white hover:text-yellow-300">Home</a></li>
+        <li><a href="https://nu-honours-result.onrender.com/about" class="text-white hover:text-yellow-300">About Us</a></li>
+        <li><a href="https://nu-honours-result.onrender.com/privacy" class="text-white hover:text-yellow-300">Privacy Policy</a></li>
+        <li><a href="https://nu-honours-result.onrender.com/contact" class="text-white hover:text-yellow-300">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-4 mt-10">
+
+    <!-- Result Card -->
+    <div class="bg-white rounded-3xl p-10 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition duration-500 mb-10 text-center animate__animated animate__fadeInUp">
+      <h1 class="text-3xl font-extrabold text-indigo-700 mb-4">🎓 NU Honours Result With GPA Calculator</h1>
+      <p class="text-gray-700 mb-6">Check GPA and results for every academic year (1st, 2nd, 3rd year) quickly and reliably using this online service.</p>
+      <button class="bg-gradient-to-r from-cyan-400 to-blue-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg hover:scale-110 hover:shadow-2xl transition duration-300"
+        onclick="window.location.href='https://nu-honours-result.onrender.com/'">
+        Visit NU Result Service
+      </button>
+    </div>
+
+    <!-- GPA Calculator Card -->
+    <div class="bg-white rounded-3xl p-10 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition duration-500 mb-10 text-center animate__animated animate__fadeInUp animate__delay-1s">
+      <h2 class="text-2xl font-extrabold text-green-700 mb-4">NU Honours GPA Calculator Bangladesh</h2>
+      <p class="text-gray-700 mb-6">Calculate GPA manually or automatically for any subjects of National University Honours program.</p>
+      <a href="https://nu-honours-result.onrender.com/calculate-gpa" class="bg-gradient-to-r from-green-400 to-emerald-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg hover:scale-110 hover:shadow-2xl transition duration-300 inline-block">
+        Open Calculator
+      </a>
+    </div>
+
+    <!-- SEO Article Section -->
+    <div class="bg-white rounded-3xl p-10 shadow-lg mb-12 animate__animated animate__fadeInUp animate__delay-2s">
+      <h2 class="text-2xl font-bold text-indigo-700 mb-4">📖 NU Honours Result 2025 & GPA Calculator – সুবিধা ও বিস্তারিত</h2>
+      <p class="text-gray-700 mb-4"><strong>National University (NU) Honours Result 2025</strong> বাংলাদেশের প্রায় ২০ লক্ষ শিক্ষার্থীর জন্য অত্যন্ত গুরুত্বপূর্ণ। অনেক সময় শিক্ষার্থীরা শুধু Result পেলেও <strong>GPA</strong> হিসাব করতে সমস্যায় পড়ে। এজন্য এনেছি একটি <em>Smart NU GPA Calculator Bangladesh</em>, যা আপনাকে দ্রুত ও নির্ভুলভাবে ফলাফল বুঝতে সাহায্য করবে।</p>
+
+      <h3 class="font-semibold mb-2 text-indigo-600">✅ NU Honours Result With GPA – সুবিধা</h3>
+      <ul class="list-inside list-disc text-gray-700 mb-4 space-y-1">
+        <li>অফিসিয়াল ওয়েবসাইট থেকে রেজাল্ট দেখতে সময় নষ্ট হয় না।</li>
+        <li>GPA অটোমেটিক হিসাব হয়ে যায় (ম্যানুয়াল ক্যালকুলেশন লাগবে না)।</li>
+        <li>মোবাইল ও কম্পিউটার উভয়েই ব্যবহার করা যায়।</li>
+        <li>১ম, ২য়, ৩য় বর্ষের Result ও GPA দেখা যাবে।</li>
+        <li>ফ্রি ও দ্রুত সার্ভিস।</li>
+      </ul>
+
+      <h3 class="font-semibold mb-2 text-indigo-600">📌 NU Honours GPA কিভাবে হিসাব করা হয়?</h3>
+      <p class="text-gray-700 mb-4">GPA বের করার নিয়ম খুব সহজ। প্রতিটি বিষয় অনুযায়ী <em>Grade Point × Credit</em> বের করে সবগুলো যোগ করতে হয়। তারপর মোট যোগফলকে মোট ক্রেডিট দিয়ে ভাগ করলে GPA পাওয়া যায়। আমাদের <strong>NU GPA Calculator</strong> স্বয়ংক্রিয়ভাবে এই কাজটি করে দেয়।</p>
+
+      <h3 class="font-semibold mb-2 text-indigo-600">🎯 কেন এই NU GPA Calculator ব্যবহার করবেন?</h3>
+      <ul class="list-inside list-disc text-gray-700 mb-4 space-y-1">
+        <li>দ্রুত ও সহজ ইউজার ইন্টারফেস</li>
+        <li>১০০% নির্ভুল ক্যালকুলেশন</li>
+        <li>NU Official Result এর সাথে সরাসরি লিংক</li>
+        <li>GPA ক্যালকুলেশন Formula সহজভাবে দেখানো আছে</li>
+      </ul>
+
+      <h3 class="font-semibold mb-2 text-indigo-600">🔍 NU Honours Result কোথায় পাওয়া যাবে?</h3>
+      <p class="text-gray-700 mb-4">আপনি চাইলে সরাসরি <a href="http://www.nu.ac.bd/results" target="_blank" class="text-blue-600 underline">NU Official Website</a> থেকে দেখতে পারেন। তবে অফিসিয়াল সাইট অনেক সময় স্লো হয়। এজন্য আমাদের <a href="https://nu-honours-result.onrender.com/" target="_blank" class="text-blue-600 underline">NU Result Service</a> ব্যবহার করে দ্রুত রেজাল্ট ও GPA পাওয়া যাবে।</p>
+
+      <h3 class="font-semibold mb-2 text-indigo-600">🌍 Year-wise Results</h3>
+      <ul class="list-inside list-disc text-gray-700 mb-4 space-y-1">
+        <li><strong>NU 1st Year Result 2025</strong> with GPA</li>
+        <li><strong>NU 2nd Year Result 2025</strong> BD</li>
+        <li><strong>NU 3rd Year Honours Result</strong> with GPA</li>
+        <li><strong>NU 4th Year Result</strong> & CGPA Calculator</li>
+      </ul>
+
+      <p class="text-gray-700">👉 তাই আর দেরি কেন? এখনই আপনার <strong>NU Honours Result 2025</strong> এবং GPA ক্যালকুলেট করুন সহজে, দ্রুত ও নির্ভুলভাবে।</p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white text-center py-6 mt-10 rounded-t-3xl shadow-inner">
+    Developed By: <span class="font-bold">Md Al Mohid</span> | 
+    <a href="https://nu-honours-result.onrender.com/privacy" class="underline hover:text-yellow-400 transition duration-300">Privacy Policy</a>
+  </footer>
+
+  <!-- JS for Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
   </script>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-      color: #333;
-    }
-    .card {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 30px 25px;
-      width: 100%;
-      max-width: 650px;
-      margin-bottom: 20px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.2);
-    }
-    .card h1, .card h2 {
-      font-weight: 700;
-      color: #0077cc;
-      margin-bottom: 15px;
-    }
-    .card button, .card a {
-      display: inline-block;
-      text-decoration: none;
-      background: linear-gradient(135deg, #00c6ff, #0072ff);
-      color: #fff;
-      font-weight: bold;
-      padding: 12px 20px;
-      border-radius: 10px;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    .card button:hover, .card a:hover {
-      background: linear-gradient(135deg, #0072ff, #00c6ff);
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-    .seo-article {
-      text-align: left;
-    }
-    .seo-article h3 {
-      margin-top: 15px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #444;
-    }
-    .seo-article ul {
-      list-style-type: "✔ ";
-      margin-left: 20px;
-      color: #555;
-    }
-    footer {
-        text-align: center;
-        margin-top: 25px;
-        font-size: 0.85rem;
-        color: #aaa;
-        font-style: italic;
-        
-    }
-  </style>
-</head>
-<body>
-
-  <div class="card">
-    <h1>🎓 NU Honours Result With GPA</h1>
-    <p>Check GPA and results for every academic year quickly and reliably using this online service.</p>
-    <button onclick="window.location.href='https://nu-honours-result.onrender.com/'">Visit Service</button>
-  </div>
-  
-  <div class="card">
-    <h2><i class="fas fa-calculator"></i> GPA Calculator</h2>
-    <p>Calculate GPA manually for any subjects</p>
-    <a href="https://nu-honours-result.onrender.com/calculate-gpa">Open Calculator</a>
-  </div>
-
-  <!-- SEO Article Section -->
-  <div class="card seo-article">
-    <h2>📖 NU Honours Result & GPA Calculator – সুবিধা ও বিস্তারিত</h2>
-    <p><strong>National University (NU) Honours Result</strong> বাংলাদেশের প্রায় ২০ লক্ষ শিক্ষার্থীর জন্য অত্যন্ত গুরুত্বপূর্ণ। অনেক সময় শিক্ষার্থীরা শুধু Result পেলেও <strong>GPA</strong> হিসাব করতে সমস্যায় পড়ে। এজন্য এনেছি একটি <em>Smart NU GPA Calculator</em>, যা আপনাকে দ্রুত ও নির্ভুলভাবে ফলাফল বুঝতে সাহায্য করবে।</p>
-    
-    <h3>✅ NU Honours Result With GPA – কী কী সুবিধা?</h3>
-    <ul>
-      <li>অফিসিয়াল ওয়েবসাইট থেকে রেজাল্ট দেখতে সময় নষ্ট হয় না।</li>
-      <li>GPA অটোমেটিক হিসাব হয়ে যায় (ম্যানুয়াল ক্যালকুলেশন লাগবে না)।</li>
-      <li>মোবাইল ও কম্পিউটার উভয়েই ব্যবহার করা যায়।</li>
-      <li>১ম বর্ষ থেকে ৩য় বর্ষ পর্যন্ত সব বছরের ফলাফল দেখা যাবে।</li>
-      <li>ফ্রি ও দ্রুত সার্ভিস।</li>
-    </ul>
-
-    <h3>📌 NU Honours GPA কিভাবে হিসাব করা হয়?</h3>
-    <p>GPA বের করার নিয়ম খুব সহজ। প্রতিটি বিষয় অনুযায়ী <em>Grade Point × Credit</em> বের করে সবগুলো যোগ করতে হয়। তারপর মোট যোগফলকে মোট ক্রেডিট দিয়ে ভাগ করলে GPA পাওয়া যায়। আমাদের <strong>GPA Calculator</strong> স্বয়ংক্রিয়ভাবে এই কাজটি করে দেয়।</p>
-
-    <h3>🎯 কেন এই NU GPA Calculator ব্যবহার করবেন?</h3>
-    <ul>
-      <li>দ্রুত ও সহজ ইউজার ইন্টারফেস</li>
-      <li>১০০% নির্ভুল ক্যালকুলেশন</li>
-      <li>NU Official Result এর সাথে সরাসরি লিংক</li>
-      <li>GPA ক্যালকুলেশন Formula সহজভাবে দেখানো আছে</li>
-    </ul>
-
-    <h3>🔍 NU Honours Result কোথায় পাওয়া যাবে?</h3>
-    <p>আপনি চাইলে সরাসরি <a href="http://www.nu.ac.bd/results" target="_blank">NU Official Website</a> থেকে দেখতে পারেন। তবে অফিসিয়াল সাইট অনেক সময় স্লো হয়। এজন্য আমাদের <a href="https://nu-honours-result.onrender.com/" target="_blank">NU Result Service</a> ব্যবহার করে দ্রুত রেজাল্ট ও GPA পাওয়া যাবে।</p>
-
-    <h3>🌍 কারা এই সার্ভিস ব্যবহার করতে পারবে?</h3>
-    <ul>
-      <li>জাতীয় বিশ্ববিদ্যালয়ের Honours শিক্ষার্থীরা</li>
-      <li>১ম, ২য়, ৩য় বর্ষের Result দেখার জন্য</li>
-      <li>GPA বা CGPA ক্যালকুলেশন করার জন্য</li>
-    </ul>
-
-    <p>👉 তাই আর দেরি কেন? এখনই আপনার NU Honours Result এবং GPA ক্যালকুলেট করুন সহজে, দ্রুত ও নির্ভুলভাবে।</p>
-  </div>
-<footer>Developed By: Md Al Mohid</footer>
 </body>
 </html>

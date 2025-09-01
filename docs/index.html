@@ -29,37 +29,58 @@
 <body class="bg-gradient-to-br from-gray-100 via-blue-50 to-indigo-100 font-sans">
 
   <!-- Navigation Bar -->
-  <header class="w-full bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 shadow-xl sticky top-0 z-50">
-    <nav class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-      <a href="index.html" class="text-white font-extrabold text-2xl tracking-wide hover:text-yellow-300 transition duration-300">🎓 NU Result BD</a>
-      
-      <!-- Desktop Menu -->
-      <ul class="hidden md:flex space-x-6 text-lg font-medium">
-        <li><a href="https://nu-honours-results.onrender.com" class="text-white hover:text-yellow-300 transition duration-300">Home</a></li>
-        <li><a href="https://nu-honours-results.onrender.com/about" class="text-white hover:text-yellow-300 transition duration-300">About Us</a></li>
-        <li><a href="https://nu-honours-results.onrender.com/privacy" class="text-white hover:text-yellow-300 transition duration-300">Privacy Policy</a></li>
-        <li><a href="https://nu-honours-results.onrender.com/contact" class="text-white hover:text-yellow-300 transition duration-300">Contact Us</a></li>
-      </ul>
+<header class="w-full bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 shadow-xl sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+    <a href="index.html" class="text-white font-extrabold text-xl tracking-wide hover:text-yellow-300 transition duration-300">
+      🎓 NU Honours Result
+    </a>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 text-lg font-semibold">
+      <li><a href="https://nu-honours-results.onrender.com/" class="text-white transition">Home</a></li>
+      <li><a href="https://nu-honours-results.onrender.com/posts" class="text-white transition">Posts</a></li>
+      <li><a href="https://nu-honours-results.onrender.com/about" class="text-white transition">About Us</a></li>
+      <li><a href="https://nu-honours-results.onrender.com/privacy" class="text-white transition">Privacy Policy</a></li>
+      <li><a href="https://nu-honours-results.onrender.com/contact" class="text-white transition">Contact Us</a></li>
+      <li>
+        <a href="https://nu-honours-results.onrender.com/calculate_gpa" class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-xl shadow-md hover:shadow-lg font-bold">
+          GPA Calculator
+        </a>
+      </li>
+      <li>
+        <a href="https://nu-honours-results.onrender.com/admin/login" class="bg-green-400 text-gray-900 px-4 py-2 rounded-xl shadow-md hover:shadow-lg font-bold">
+           ➕ New Post
+        </a>
+      </li>
+    </ul>
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="block md:hidden text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-r from-blue-700 to-purple-700 p-6 space-y-3 animate__animated animate__fadeInDown">
+    <a href="https://nu-honours-results.onrender.com/" class="block text-white font-semibold hover:text-yellow-300">Home</a>
+    <a href="https://nu-honours-results.onrender.com/posts" class="block text-white font-semibold hover:text-yellow-300">Posts</a>
+    <a href="https://nu-honours-results.onrender.com/about" class="block text-white font-semibold hover:text-yellow-300">About Us</a>
+    <a href="https://nu-honours-results.onrender.com/privacy" class="block text-white font-semibold hover:text-yellow-300">Privacy Policy</a>
+    <a href="https://nu-honours-results.onrender.com/contact" class="block text-white font-semibold hover:text-yellow-300">Contact Us</a>
+    <a href="https://nu-honours-results.onrender.com/calculate_gpa" class="block bg-yellow-400 text-gray-900 text-center py-2 rounded-xl font-bold shadow-md hover:shadow-lg">GPA Calculator</a>
+    <a href="https://nu-honours-results.onrender.com/admin/login" class="block bg-green-400 text-gray-900 text-center py-2 rounded-xl font-bold shadow-md hover:shadow-lg">➕ New Post</a>
+  </div>
+</header>
 
-      <!-- Mobile Hamburger -->
-      <button id="menu-btn" class="block md:hidden text-white focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </nav>
+<!-- Hero Section -->
+<section class="text-center py-16 bg-gradient-to-r from-indigo-600 via-blue-600 to-purple-600 text-white shadow-lg w-full">
+  <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold animate__animated animate__fadeInDown">
+    {% block hero_title %}NU Honours Results{% endblock %}
+  </h1>
+  <p class="mt-4 text-lg sm:text-xl md:text-2xl animate__animated animate__fadeInUp">
+    {% block hero_subtitle %}Check all National University Honours exam results, GPA calculation, and more{% endblock %}
+  </p>
+</section>
 
-    <!-- Mobile Dropdown Menu -->
-    <div id="menu" class="hidden md:hidden bg-gradient-to-r from-blue-700 to-purple-700 shadow-lg animate__animated animate__fadeInDown">
-      <ul class="flex flex-col space-y-2 p-4 text-lg">
-        <li><a href="https://nu-honours-results.onrender.com" class="text-white hover:text-yellow-300">Home</a></li>
-        <li><a href="https://nu-honours-results.onrender.com/about" class="text-white hover:text-yellow-300">About Us</a></li>
-        <li><a href="https://nu-honours-results.onrender.com/privacy" class="text-white hover:text-yellow-300">Privacy Policy</a></li>
-        <li><a href="https://nu-honours-resultsonrender.com/contact" class="text-white hover:text-yellow-300">Contact Us</a></li>
-      </ul>
-    </div>
-  </header>
 
   <!-- Main Content -->
   <main class="max-w-5xl mx-auto px-4 mt-10">

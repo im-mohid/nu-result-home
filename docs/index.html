@@ -35,6 +35,17 @@
       color: transparent;
       -webkit-text-fill-color: transparent; /* Safari */
       }
+
+      /* Apply gradient hover to both desktop and mobile menu links */
+nav a:hover,
+#mobile-menu a:hover {
+  background: linear-gradient(90deg, #00f, #0ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 </style>
 </head>
 <body class="bg-gradient-to-br from-gray-100 via-blue-50 to-indigo-100 font-sans">
